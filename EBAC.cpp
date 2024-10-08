@@ -130,7 +130,8 @@ int main() //função principal, com o desenvolvimento do programa
 		printf("Escolha a opção desejada:\n\n");
 		printf("\t1 - Incluir usuários\n");
 		printf("\t2 - Consultar usuários\n");
-		printf("\t3 - Deletar usuários\n\n"); 
+		printf("\t3 - Deletar usuários\n"); 
+		printf("\t4 - Sair do sistema\n\n");
 		printf("Selecionar opção:"); //fim menu
 	
 		scanf("%d" , &opcao); //armazenamento da escolha em string
@@ -149,6 +150,11 @@ int main() //função principal, com o desenvolvimento do programa
 			
 			case 3:
 			deletar();	
+			break;
+			
+			case 4:
+			printf("Obrigado, até mais!\n");
+			return 0;
 			break;
 			
 			default: //tudo que não estiver nos casos principais
